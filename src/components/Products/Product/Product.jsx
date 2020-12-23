@@ -29,6 +29,7 @@ const Product = ({ product, onAddToCart }) => {
           <Typography variant="h5">${product.price.formatted}</Typography>
         </div>
         <Typography
+          style={{ maxHeight: "50px" }}
           dangerouslySetInnerHTML={{ __html: product.description }}
           variant="body2"
           color="textSecondary"
